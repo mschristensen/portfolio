@@ -1,3 +1,9 @@
-<p>
-  review-spinner works!
-</p>
+<div class="review-spinner">
+  <div class="controls">
+    <img class="arrow" src="assets/icons/arrow-left.png">
+    <img [src]="reviews[selectedReviewIdx].imgUrl">
+    <img class="arrow" src="assets/icons/arrow-right.png">
+  </div>
+  <p class="quote-body">{{ reviews[selectedReviewIdx].body }}</p>
+  <p class="quote-author">- {{ reviews[selectedReviewIdx].author }}</p>
+</div>

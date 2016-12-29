@@ -13,6 +13,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReviewSpinnerComponent } from './components/review-spinner/review-spinner.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReviewSpinnerComponent } from './components/review-spinner/review-spinn
     ProjectsComponent,
     SkillsComponent,
     ContactComponent,
-    ReviewSpinnerComponent
+    ReviewSpinnerComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
