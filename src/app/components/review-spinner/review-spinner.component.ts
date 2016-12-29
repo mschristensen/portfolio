@@ -13,7 +13,6 @@ export class ReviewSpinnerComponent implements OnInit {
   }
 
   selectedReviewIdx = 0;
-
   reviews = [
     {
       body: "From the first time I met with Mike he has demonstrated an in-depth understanding of the tools necessary to bring the vision we had into reality. We now have our beta online and everything is running as planned. We would be very keen to have him come back to work for us again.",
@@ -29,5 +28,11 @@ export class ReviewSpinnerComponent implements OnInit {
       imgUrl: "assets/images/reviews/ocean-blue.png"
     }
   ];
+
+  nextReview(inc) {
+    let next = (this.selectedReviewIdx + inc) % this.reviews.length;
+    if(next < 0) next = this.reviews.length - 1;
+    this.selectedReviewIdx = next;
+  }
 
 }

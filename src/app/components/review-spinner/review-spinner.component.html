@@ -1,8 +1,8 @@
 <div class="review-spinner">
   <div class="controls">
-    <img class="arrow" src="assets/icons/arrow-left.png">
+    <img class="arrow" src="assets/icons/arrow-left.png" (click)="nextReview(-1)">
     <img [src]="reviews[selectedReviewIdx].imgUrl">
-    <img class="arrow" src="assets/icons/arrow-right.png">
+    <img class="arrow" src="assets/icons/arrow-right.png" (click)="nextReview(1)">
   </div>
   <p class="quote-body">{{ reviews[selectedReviewIdx].body }}</p>
   <p class="quote-author">- {{ reviews[selectedReviewIdx].author }}</p>
