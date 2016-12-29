@@ -1,3 +1,5 @@
+@import '../portfolio-constants.less';
+
 md-toolbar {
   position: fixed;
   top: 0;
@@ -20,32 +22,37 @@ md-toolbar {
       position: relative;
       margin: 0 30px;
 
-      img {
-        height: 24px;
-        width: 24px;
-        margin-bottom: 5px;
-      }
-      p {
-        font-size: 9px;
-        font-weight: 500;
-      }
+      a {
+        text-align: center;
 
-      div.select-arrow {
-        position: absolute;
-        bottom: -8px;
-        width: 14px;
-        height: 14px;
-        background-color: white;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        opacity: 0;
-      }
+        img {
+          height: 24px;
+          width: 24px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 9px;
+          font-weight: 500;
+        }
 
-      &:hover div.select-arrow {
-        opacity: 1;
+        div.select-arrow {
+          position: absolute;
+          bottom: -8px;
+          left: calc(~'50% - 7px');
+          width: 14px;
+          height: 14px;
+          background-color: @bg-light;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          opacity: 0;
+        }
+
+        &:hover div.select-arrow {
+          opacity: 1;
+        }
       }
     }
   }
