@@ -2,9 +2,50 @@ md-toolbar {
   position: fixed;
   top: 0;
   left: 0;
-  .example-fill-remaining-space {
-    // This fills the remaining space, by using flexbox.
-    // Every toolbar row uses a flexbox row layout.
-    flex: 1 1 auto;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 30px;
+
+      img {
+        height: 24px;
+        width: 24px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 9px;
+        font-weight: 500;
+      }
+
+      div.select-arrow {
+        position: absolute;
+        bottom: -8px;
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+
+      &:hover div.select-arrow {
+        opacity: 1;
+      }
+    }
   }
 }
