@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MaterialModule } from '@angular/material';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { StraplineComponent } from './components/strapline/strapline.component';
@@ -25,7 +26,8 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    Ng2PageScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
