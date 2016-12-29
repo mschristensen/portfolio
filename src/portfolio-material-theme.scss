@@ -7,8 +7,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$portfolio-app-primary: md-palette($md-indigo);
-$portfolio-app-accent:  md-palette($md-blue-grey, A200, A100, A400);
+$portfolio-app-primary: md-palette($md-blue-grey);
+$portfolio-app-accent:  md-palette($md-blue, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $portfolio-app-warn:    md-palette($md-red);
