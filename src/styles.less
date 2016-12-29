@@ -1,5 +1,6 @@
 @import 'fonts.less';
 @import 'reset.css';
+@import 'portfolio-constants.less';
 
 html, body {
   width: 100%;
@@ -7,4 +8,18 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', "Helvetica Neue", sans-serif;
+}
+
+.section {
+  width: 100%;
+  background-color: @bg-light;
+  padding: 50px 20px;
+
+  h2.section-header {
+    font-size: 2.4em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+    color: @heading-dark;
+  }
 }
