@@ -7,11 +7,19 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { StraplineComponent } from './components/strapline/strapline.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StraplineComponent
+    StraplineComponent,
+    HowItWorksComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
