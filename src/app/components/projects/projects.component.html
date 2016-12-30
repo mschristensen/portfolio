@@ -1,2 +1,18 @@
 <div id="projects" class="section">
+  <ul id="project-list" [ngStyle]="{ 'transform': 'translateX(' + getScrollOffset() + 'px)' }">
+    <li *ngFor="let project of projects; let idx = index" (click)="selectProject(idx)" [ngClass]="{ 'selected': idx == selectedProjectIndex }">
+      <img [src]="project.thumbUrl">
+      <div class="overlay"><p>{{ project.name }}</p></div>
+    </li>
+  </ul>
+  <div id="project-detail">
+    <div id="flex-container">
+      <div id="detail-text">
+        <h2 class="section-header">{{ projects[selectedProjectIndex].name }}</h2>
+        <h3>{{ projects[selectedProjectIndex].type }} | {{ projects[selectedProjectIndex].date }}</h3>
+        <p>{{ projects[selectedProjectIndex].description }}</p>
+      </div>
+      <img [src]="projects[selectedProjectIndex].graphicUrl">
+    </div>
+  </div>
 </div>
