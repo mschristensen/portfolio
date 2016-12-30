@@ -14,6 +14,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReviewSpinnerComponent } from './components/review-spinner/review-spinner.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { BoidsCanvasWrapperComponent } from './components/boids-canvas-wrapper/boids-canvas-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     SkillsComponent,
     ContactComponent,
     ReviewSpinnerComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    BoidsCanvasWrapperComponent
   ],
   imports: [
     BrowserModule,
