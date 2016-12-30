@@ -9,6 +9,7 @@
     <div id="flex-container">
       <div id="detail-text">
         <h2 class="section-header">{{ projects[selectedProjectIndex].name }}</h2>
+        <a md-button [href]="projects[selectedProjectIndex].url" target="_blank" [hidden]="hasButton(projects[selectedProjectIndex])">{{ projects[selectedProjectIndex].buttonText | uppercase }}</a>
         <h3>{{ projects[selectedProjectIndex].type }} | {{ projects[selectedProjectIndex].date }}</h3>
         <p>{{ projects[selectedProjectIndex].description }}</p>
       </div>

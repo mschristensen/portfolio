@@ -39,7 +39,7 @@ export class ProjectsComponent implements OnInit {
       type: 'website/mobile app',
       description: "I was the lead front-end developer on a team commissioned to build a responsive, cross-platform web and mobile app for the Environment Agency, which presented a variety of geographic data sets in an intuitive and engaging way.\n\nWe developed an innovative ‘slider’ feature to facilitate the comparison of the data sets, alongside real-time location search and favouriting.\n\nThe app was built using web development technologies (HTML5, Less, Javascript, jQuery) and packaged for mobile with Phonegap.",
       url: '',
-      buttonText: 'view demo'
+      buttonText: ''
     },{
       name: 'LanguagePear',
       thumbUrl: 'assets/images/projects/languagepear.thumb.png',
@@ -74,8 +74,8 @@ export class ProjectsComponent implements OnInit {
       date: '2013',
       type: 'website',
       description: "I was commissioned to design the hair and beauty social networking site HairBeaut, using the Ning platform and custom style sheets.\n\nHairBeaut allows hairdressers and beauty therapists to share their passion in an active community of like people. The site offers an activity feed, profiles, forums, discussion pages, and more.",
-      url: 'http://hairbeaut.com/',
-      buttonText: 'visit website'
+      url: '',
+      buttonText: ''
     },{
       name: 'Student Robotics',
       thumbUrl: 'assets/images/projects/sr.thumb.png',
@@ -108,5 +108,13 @@ export class ProjectsComponent implements OnInit {
       // in the former section of the items: dont scroll at all
       return 0;
     }
+  }
+
+  hasButton(project): boolean {
+    if(project.url == '' || typeof project.url == 'undefined' ||
+    project.buttonText == '' || typeof project.buttonText == 'undefined') {
+      return true;
+    }
+    return false;
   }
 }
