@@ -23,7 +23,7 @@ export class SkillsComponent implements OnInit {
     { name: 'Less', url: 'assets/images/skills/less.svg' },
     { name: 'JavaScript', url: 'assets/images/skills/javascript.svg' },
     { name: 'AngularJS', url: 'assets/images/skills/angular.svg' },
-    { name: 'jQuery', url: 'assets/images/skills/jQuery.svg' },
+    { name: 'jQuery', url: 'assets/images/skills/jquery.svg' },
     { name: 'Node.js', url: 'assets/images/skills/node.svg' },
     { name: 'MongoDB', url: 'assets/images/skills/mongodb.svg' },
     { name: 'PostgreSQL', url: 'assets/images/skills/postgresql.svg' },
