@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Review {
+  body: string;
+  author: string;
+  imgUrl: string;
+}
+
 @Component({
   selector: 'review-spinner',
   templateUrl: './review-spinner.component.html',
@@ -12,8 +18,8 @@ export class ReviewSpinnerComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectedReviewIdx = 0;
-  reviews = [
+  selectedReviewIdx: number = 0;
+  reviews: Review[] = [
     {
       body: "From the first time I met with Mike he has demonstrated an in-depth understanding of the tools necessary to bring the vision we had into reality. We now have our beta online and everything is running as planned. We would be very keen to have him come back to work for us again.",
       author: "James Weir, Managing Director, WE Collective",
@@ -29,7 +35,7 @@ export class ReviewSpinnerComponent implements OnInit {
     }
   ];
 
-  nextReview(inc) {
+  nextReview(inc: number): void {
     let next = (this.selectedReviewIdx + inc) % this.reviews.length;
     if(next < 0) next = this.reviews.length - 1;
     this.selectedReviewIdx = next;

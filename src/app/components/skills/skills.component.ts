@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Skill {
+  name: string;
+  url: string;
+}
+
 @Component({
   selector: 'skills',
   templateUrl: './skills.component.html',
@@ -12,7 +17,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
 
-  skills = [
+  skills: Skill[] = [
     { name: 'HTML5', url: 'assets/images/skills/html5.svg' },
     { name: 'CSS3', url: 'assets/images/skills/css3.svg' },
     { name: 'Less', url: 'assets/images/skills/less.svg' },

@@ -1,5 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Project {
+  name: string;
+  thumbUrl: string;
+  graphicUrl: string;
+  date: string;
+  type: string;
+  description: string;
+  url: string;
+  buttonText: string;
+}
+
 @Component({
   selector: 'projects',
   templateUrl: './projects.component.html',
@@ -12,7 +23,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  projects = [
+  projects: Project[] = [
     {
       name: 'Tripmappr',
       thumbUrl: 'assets/images/projects/tripmappr.thumb.png',
