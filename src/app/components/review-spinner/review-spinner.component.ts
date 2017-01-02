@@ -16,7 +16,7 @@ export class ReviewSpinnerComponent implements OnInit {
   constructor() {
     setInterval(() => {
       this.nextReview(1);
-    }, 6000);
+    }, 25000);
   }
 
   ngOnInit() {
