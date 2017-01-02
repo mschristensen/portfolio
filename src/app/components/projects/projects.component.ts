@@ -106,8 +106,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   getScrollOffset(): number {
-    let startScrollingIdx: number = 2;  // only shift the items when selecting past this idx
-    let itemWidth: number = 200;
+    let startScrollingIdx: number = 1;  // only shift the items when selecting past this idx
+    let itemWidth: number = window.screen.width > 800 ? 200 : 110;
 
     if(this.selectedProjectIndex > startScrollingIdx && this.selectedProjectIndex < this.projects.length - startScrollingIdx - 1) {
       // in the middle section of the items

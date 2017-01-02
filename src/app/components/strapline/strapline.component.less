@@ -3,9 +3,15 @@
 #strapline {
   position: relative;
   width: 100%;
-  margin-top: 64px;
   background-color: @bg-dark;
   text-align: center;
+
+  // space for md-toolbar
+  margin-top: 64px;
+
+  @media (max-width: 1280px) {
+    margin-top: 0;
+  }
 
   #boids-canvas-wrapper {
     z-index: 0;
@@ -25,6 +31,7 @@
     h1, h2 {
       margin: 0 auto;
       color: white;
+      padding: 0 10px;
     }
 
     h1 {

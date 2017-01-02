@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100%;
   background-color: @bg-medium-light;
+  overflow: hidden;
 
   ul#project-list {
     white-space: nowrap;
@@ -20,6 +21,14 @@
       margin-right: 20px;
       border-radius: 6px;
       overflow: hidden;
+      white-space: normal;
+
+      @media (max-width: 800px) {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        font-size: 0.8em;
+      }
 
       img {
         width: 100%;
@@ -100,6 +109,10 @@
         width: 400px;
         height: auto;
         margin: 0 40px;
+
+        @media (max-width: 800px) {
+          display: none;
+        }
       }
     }
   }

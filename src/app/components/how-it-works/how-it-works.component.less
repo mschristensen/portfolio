@@ -5,13 +5,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 32px;
 
     .box {
       position: relative;
-      width: 300px;
+      width: calc(~'100% - 20px');
+      max-width: 300px;
       padding: 20px;
-      margin: 0 20px;
+      margin: 20px;
       border: 2px solid @bg-dark;
       border-radius: 6px;
       text-align: center;
