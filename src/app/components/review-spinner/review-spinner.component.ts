@@ -14,7 +14,6 @@ interface Review {
 export class ReviewSpinnerComponent implements OnInit {
 
   constructor() {
-    // loop through reviews every 6 seconds
     setInterval(() => {
       this.nextReview(1);
     }, 6000);
