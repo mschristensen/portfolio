@@ -76,8 +76,8 @@ export class ProjectsComponent implements OnInit {
       date: '2013/14',
       type: 'mobile app',
       description: "I developed and released a motion detection and capture app, IntruderCam, for the Windows Phone store, using C# and .NET.\n\nThe app can act as your own personal CCTV camera. Whether your pesky neighbour keeps backing into your car, or you suspect your little brother is stealing chocolate from your room, IntruderCam helps you catch them red-handed!\n\nThe app has performed very well, achieving an average 4.8 star rating and more than 8000 downloads.",
-      url: 'https://www.microsoft.com/en-us/store/apps/intrudercam/9nblggh08kb7',
-      buttonText: 'view in store'
+      url: '',
+      buttonText: ''
     },{
       name: 'Hairbeaut',
       thumbUrl: 'assets/images/projects/hairbeaut.thumb.png',
