@@ -36,6 +36,11 @@ export class ReviewSpinnerComponent implements OnInit {
       body: "Mike is a very thorough engineer that dives into all small details. He is a real team player and learns very fast. He is a valuable member of a team who consistently achieves good results and delivers to all expectations.",
       author: "Nir Ezry, Operations Director, Ocean Blue Software",
       imgUrl: "assets/images/reviews/ocean-blue.png"
+    },
+    {
+      body: "Mike became a core member of the team during LanguagePear’s early development. He maintained constant communication and transparency throughout the project and developed our app to high quality, on time and on budget.",
+      author: "Marc Christensen, Founder, LanguagePear",
+      imgUrl: "assets/images/reviews/languagepear.png"
     }
   ];
 
