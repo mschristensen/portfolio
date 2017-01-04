@@ -25,6 +25,15 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [
     {
+      name: 'WE Collective',
+      thumbUrl: 'assets/images/projects/weco.thumb.jpg',
+      graphicUrl: 'assets/images/projects/weco.graphic.png',
+      date: '2016/17',
+      type: 'web app',
+      description: "I was contracted by the non-profit startup WE Collective to build the first iteration of their full-scale social news platform.\n\nWECO aims to solve a lot of the fundamental challenges facing Reddit, and as such the web app has been built for maintainability and scalability. This application is being developed from the ground up using Node.js, AngularJS and AWS.",
+      url: 'https://www.weco.io/',
+      buttonText: 'visit site'
+    },{
       name: 'Tripmappr',
       thumbUrl: 'assets/images/projects/tripmappr.thumb.png',
       graphicUrl: 'assets/images/projects/tripmappr.graphic.png',
